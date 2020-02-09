@@ -1,0 +1,18 @@
+type Technology{
+    id: Int
+    name: String
+    projects_technologies: [Project_technology]
+}
+
+input TechnologyWhere{
+    id: Int
+    name: String
+}
+
+type Query{
+    GetTechnologies(where: TechnologyWhere, limit: Int, offset: Int): [Technology]
+}
+
+type Mutation{
+    z: Boolean
+}

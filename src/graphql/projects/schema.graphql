@@ -1,0 +1,22 @@
+type Project{
+    id: Int
+    title: String
+    url: String
+    description: String
+    projects_technologies: [Project_technology]
+}
+
+input ProjectWhere{
+    id: Int
+    title: String
+    url: String
+    description: String
+}
+
+type Query{
+    GetProjects(where: ProjectWhere, limit: Int, offset: Int): [Project]
+}
+
+type Mutation{
+    x: Boolean
+}

@@ -1,0 +1,21 @@
+type Project_technology{
+    id: Int
+    projects_id: Int
+    technologies_id: Int
+    technology: Technology
+    project: Project
+}
+
+input Project_technologyWhere{
+    id: Int
+    projects_id: Int
+    technologies_id: Int
+}
+
+type Query{
+    GetProjects_technologies(where: Project_technologyWhere, limit: Int, offset: Int): [Project_technology]
+}
+
+type Mutation{
+    y: Boolean
+}
