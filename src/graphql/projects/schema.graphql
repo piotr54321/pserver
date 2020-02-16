@@ -4,6 +4,7 @@ type Project{
     url: String
     description: String
     projects_technologies: [Project_technology]
+    projects_images: [Project_image]
 }
 
 input ProjectWhere{
