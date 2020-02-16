@@ -1,5 +1,6 @@
 import {Table, Column, Model, HasMany} from "sequelize-typescript";
 import {projects_technologies} from "./projects_technologies.model";
+import {projects_images} from "./projects_images.model"
 
 @Table
 export class projects extends Model<projects>{
@@ -16,5 +17,8 @@ export class projects extends Model<projects>{
     description: string;
 
     @HasMany(() => projects_technologies)
-    projects_technologies: projects_technologies[]
+    projects_technologies: projects_technologies[];
+
+    @HasMany(() => projects_images)
+    projects_images: projects_images[];
 }

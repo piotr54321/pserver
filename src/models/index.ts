@@ -29,3 +29,4 @@ console.log(__dirname);
 export {projects} from './projects.model';
 export {projects_technologies} from './projects_technologies.model';
 export {technologies} from './technologies.model';
+export {projects_images} from './projects_images.model';

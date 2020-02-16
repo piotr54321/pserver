@@ -1,0 +1,22 @@
+type Project_image{
+    id: Int
+    projects_id: Int
+    image_filename: String
+    main: Int
+    project: Project
+}
+
+input Project_imageWhere{
+    id: Int
+    projects_id: Int
+    image_filename: String
+    main: Int
+}
+
+type Query{
+    GetProjects_images(where: Project_imageWhere, limit: Int, offset: Int): [Project_image]
+}
+
+type Mutation{
+    w: Boolean
+}
