@@ -16,6 +16,12 @@ export class projects extends Model<projects>{
     @Column({defaultValue: ''})
     description: string;
 
+    @Column({defaultValue: ''})
+    short_description: string;
+
+    @Column({defaultValue: ''})
+    other_info: string;
+
     @HasMany(() => projects_technologies)
     projects_technologies: projects_technologies[];
 

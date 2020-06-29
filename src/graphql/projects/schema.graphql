@@ -3,6 +3,8 @@ type Project{
     title: String
     url: String
     description: String
+    short_description: String
+    other_info: String
     projects_technologies: [Project_technology]
     projects_images: [Project_image]
 }
@@ -12,6 +14,8 @@ input ProjectWhere{
     title: String
     url: String
     description: String
+    short_description: String
+    other_info: String
 }
 
 type Query{

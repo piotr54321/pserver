@@ -17,4 +17,7 @@ export class projects_images extends Model<projects_images>{
 
     @Column({defaultValue: 0})
     main: number;
+
+    @Column({defaultValue: 0})
+    alt: string;
 }
